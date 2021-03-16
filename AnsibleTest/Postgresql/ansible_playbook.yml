@@ -1,0 +1,9 @@
+- name: Create a PostgreSQL DB server
+  hosts: all
+  become: true ## activate privilege escalation just in case
+  vars_files: ## we will use the variables that we did set up in vars/main.yml for our database 
+    - vars/main.yml  
+
+  roles:
+  - createdb ## we will use the handlers and roles to create our database
+

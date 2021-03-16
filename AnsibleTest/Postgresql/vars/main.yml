@@ -1,0 +1,6 @@
+---
+db_user: Bogomil  
+db_name: BOGOMILDB
+db_password: 12345
+
+update_apt_cache: true
